@@ -1,0 +1,13 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<div class="slds-m_around-small slds-grid slds-wrap" style="border:2px solid red">
+			<div class="slds-size_1-of-4 slds-m_around-small" style="border:2px solid blue">C1</div>
+			<div class="slds-size_1-of-4 slds-m_around-small" style="border:2px solid blue">C2</div>
+			<div class="slds-size_1-of-4 slds-m_around-small" style="border:2px solid blue">C3</div>
+			<template if:true={features.show} for:each={features.child} for:item="c">
+				<c-child key={c.key} width="border: 2px solid yellow;width:90px" child={c}></c-child>
+			</template>
+			<div class="slds-size_1-of-4 slds-m_around-small" style="border:2px solid blue">C4</div>
+		</div>
+	</div>
+</template>

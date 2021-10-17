@@ -1,0 +1,6 @@
+<template>
+	<p style={width}>C{child.key}</p>
+	<template if:true={child.show} for:each={child.child} for:item="c">
+		<c-child key={c.key} width={width} child={c}>{c.key}</c-child>
+	</template>
+</template>

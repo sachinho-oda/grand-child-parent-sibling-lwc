@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/sachinho-oda.grand-child-parent-sibling-lwc",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve GT0GuVtqMKXYDqaqaQsj --open"
+  }
+}
